@@ -1,9 +1,9 @@
 ## Functional Thinking and Programming in Python
 
-# How to contribute
+## How to contribute
 
 All contributions welcomed. Follow these [guidelines](CONTRIBUTING.md)
 
-# License
+## License
 
 This repository is [MIT Licensed](LICENSE)
