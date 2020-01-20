@@ -14,14 +14,10 @@ for i in range (0,count):
     list2.append(0) # declare default values     
 
 # Reverse not working :(
-'''# Create another list storing reverse values of list 1
-list2 = list1.reverse()'''
-
-# Manually created reverse list
-c = count-1 # index of list to decrease
-for el in list1:
-    list2[c] = el
-    c=c-1
+# Create another list storing reverse values of list 1
+# list2 = list1.reverse() does not work
+# list2 = reversed(list1) does not work
+list2 = list1[::-1] # Method 3 -> Slicing
 
 # Sum of list1 and list2
 for i in range (0,count):
