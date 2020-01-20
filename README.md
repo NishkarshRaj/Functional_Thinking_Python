@@ -1,4 +1,4 @@
-# Functional_Thinking_Python
+## Functional Thinking and Programming in Python
 
 # How to contribute
 
