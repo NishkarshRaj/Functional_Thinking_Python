@@ -8,10 +8,12 @@ list1 = list()
 list2 = list()
 # Or -> list1 = []
 
-# Take input numbers
+'''# Take input numbers
 for i in range (0,count):
     list1.append(int(input('Enter value: ')))
-    list2.append(0) # declare default values     
+    list2.append(0) # declare default values'''
+# Taking all inputs at once as space separated values
+list1 = list(map(int,input().split(' ')))    
 
 # Reverse not working :(
 # Create another list storing reverse values of list 1
