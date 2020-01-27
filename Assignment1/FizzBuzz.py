@@ -16,4 +16,5 @@ def fizzbuzz(value):
             print(i)
             
 # Driver Code
-fizzbuzz(30)
+x = int(input("Enter a number: "))
+fizzbuzz(x)
