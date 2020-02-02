@@ -1,5 +1,7 @@
 # Selection Sort, on each iteration, put the minimum element to the left
-
+'''
+For each iteration, find the minimum element position and replace that element with ith index
+'''
 print("Enter Array as space separated values: ")
 array = list(map(int,input().split(' ')))
 
