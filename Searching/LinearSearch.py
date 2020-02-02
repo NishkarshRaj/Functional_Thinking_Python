@@ -1,13 +1,7 @@
 import numpy as np
 
-# Create empty list
-arr = list()
-
-# Take user input
-n = int(input("Enter number of elements: "))
-print("Enter",n,"elements: ")
-for x in range(0,n):
-    arr.append(int(input()))
+print("Enter Array as space separated values: ")
+arr = list(map(int,input().split(' ')))
     
 # Convert to Array
 array = np.array(arr)
