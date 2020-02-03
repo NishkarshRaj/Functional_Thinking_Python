@@ -20,16 +20,21 @@ Elements of list can be:
 
 **1. Creation of Lists**
 
+```Python
 list_variable = [<<comma separated list elements>>]
+```
 
 **Nested lists**
+```Python
 list1 = list() # Creation of empty list
 list2 = list()
 list3 = list()
 list = [list1,list2,list3]
-
+```
 **View the list**
+```Python
 print(list)
+```
 
 **2. Indexing in Python**
 
@@ -40,5 +45,3 @@ print(list)
 
 * Top level component/element accessing -> Access elements of the list []
 * Sub level component/element accessing -> Access elements of elements of list (Nested List) [][]
-
-
