@@ -29,10 +29,17 @@ It is not necessary that set contains values in order that we have defined.
 > Sets are immutable?
 
 **Union:** set1.union(set2)
+
 **Intersection:** set1.intersection(set2)
+
 **Difference:** A-B 
+
 {A.difference(B)} not equals B-A {B.difference(A)}
+
 > A-B = A - A.B
+
 **Symmetric Difference:** A--B == B--A 
+
 Symmetric difference gives the set of elements not common in both => A-B + B-A = A+B - A.B
+
 A.symmetric_difference(B) 
