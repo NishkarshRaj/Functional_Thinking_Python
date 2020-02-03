@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-1. Lists
-2. Tuples
-3. Strings
-4. Sets
-5. Dictionary
+* Data Structures
+* Numpy Library
+* Pandas Library
+* Searching Algorithms
+* Sorting Algorithms
 
 ## How to contribute
 
