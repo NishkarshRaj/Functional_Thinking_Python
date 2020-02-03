@@ -39,6 +39,7 @@ print(list)
 **2. Indexing in Python**
 
 **2.1 Positive Indexing:** Ranges from 0 to N-1 and moves from left to right element
+
 **2.2 Negative Indexing:** Ranges from -1 to -N and moves from right to left element
 
 **3. Accessing elements of list**
