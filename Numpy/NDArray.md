@@ -8,7 +8,9 @@
 4. Advantages of Numpy
 
 **1. Numpy:** Numerical Python
+
 It is a package of pre-defined functions to perform numericals 
+
 **Object:** ndarray (N dimensional Arrays)
 
 **Uses:**
