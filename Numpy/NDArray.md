@@ -135,26 +135,35 @@ print(y.itemsize*len(y)) # Size is 220
 
 <hr>
 
-Overview:
+## Table of Contents
+
 1. Reshaping an array
 2. Numpy operations
 3. Accessing elements of array
 
-1. Reshaping an array
-array1 = array2.reshape(shape) //does not modify old array, creates new array
+**1. Reshaping an array**
 
--> Creating 1D, 2D and 3D array
--> Dimensions
-* array.shape -> gives the shape of the array in tuple form, operator not function
+array1 = array2.reshape(shape) #does not modify old array, creates new array
 
-2. Numpy Operations -> Element wise operation for same shape arrays
+* Creating 1D, 2D and 3D array
+* Dimensions
+
+array.shape -> gives the shape of the array in tuple form, operator not function
+
+**2. Numpy Operations:** Element wise operation for same shape arrays
+
 2.1) Addition: numpy.add(arr1,arr2) -> element wise addition of SAME SHAPE array
+
 2.2) Multiplication: numpy.multiply(arr1,arr2) -> element wise multiplication of SAME SHAPE Array => not matrix multiplication 
+
 2.3) numpy.subtract()
+
 2.4) numpy.divide()
+
 2.5) numpy.remainder()
 
-3. Accessing elements of the array
+**3. Accessing elements of the array**
+
 Indexing is used: Positive and negative (0-(N-1)) or (-N to -1)
 
 Most important: Accessing elements of 2D arrays -> NOTE!!! array[x][y] and array [x,y] where x defines row and y defines column both works
@@ -164,7 +173,9 @@ Generic Accessing 2D array by slicing: array[rstart:rend,cstart:cend]
 -> Creation of Subsets of Arrays: By accessing using slicing
 
 -> Updating the array
+
 **BCD!!!!** Updating the subset also updates the original array!!
+
 import numpy as np
 x = np.arange(1,10).reshape((3,3))
 subset = x[:2,:2]
@@ -173,11 +184,13 @@ print(subset)
 print(x)
 
 -> Transpose the array: Does not transpose the original array until assigned back
+
 * np.transpose(array) # Function
 * array.T # Operator
 
 -> Append elements to array
-* Syntax: np.append(array, array to insert, axis)
+
+* **Syntax:** np.append(array, array to insert, axis)
 
 ** Rowise append: axis = 0
 ** Columnwise append: axis = 1
