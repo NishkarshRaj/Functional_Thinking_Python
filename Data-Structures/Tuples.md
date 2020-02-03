@@ -2,7 +2,6 @@
 
 ## Table of contents
 
-
 1. Creation of Tuples
 2. Indexing of Tuples
 3. Accessing elements of Tuples
@@ -33,11 +32,16 @@ Negative indexing for kth positive index = k-n
 * Cannot modify because tuples are immutable
 
 **4. Slicing** (Access multiple elements of tuple at once)
-tuple[x:y] 
+> tuple[x:y] 
+
 x inclusive and y exclusive
+
 Elements are extracted from x to y-1
+
 * Slicing always from left to right irrespective of indexing!!!
+
 [:y] -> 0 to y-1
+
 [x:] -> x to -1
 
 **5. Built in functions**
