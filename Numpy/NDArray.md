@@ -143,12 +143,16 @@ print(y.itemsize*len(y)) # Size is 220
 
 **1. Reshaping an array**
 
+```Python
 array1 = array2.reshape(shape) #does not modify old array, creates new array
+```
 
 * Creating 1D, 2D and 3D array
 * Dimensions
 
+```Python
 array.shape -> gives the shape of the array in tuple form, operator not function
+```
 
 **2. Numpy Operations:** Element wise operation for same shape arrays
 
@@ -176,17 +180,21 @@ Generic Accessing 2D array by slicing: array[rstart:rend,cstart:cend]
 
 **BCD!!!!** Updating the subset also updates the original array!!
 
+```Python
 import numpy as np
 x = np.arange(1,10).reshape((3,3))
 subset = x[:2,:2]
 subset[0,0]=41
 print(subset)
 print(x)
+```
 
 -> Transpose the array: Does not transpose the original array until assigned back
 
+```Python
 * np.transpose(array) # Function
 * array.T # Operator
+```
 
 -> Append elements to array
 
@@ -195,6 +203,7 @@ print(x)
 ** Rowise append: axis = 0
 ** Columnwise append: axis = 1
 
+```Python
 import numpy as np
 x = np.arange(1,10).reshape((3,3))
 '''
@@ -207,8 +216,10 @@ print(x)
 col = np.array([41,41,41]).reshape(3,1)
 x = np.append(x,col,axis=1)
 print(x)
+```
 
 ->  Insert
+
 * Syntax: np.insert(array, index, values, axis)
 
 -> Delete entire row/column
