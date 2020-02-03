@@ -9,7 +9,7 @@
 
 **1. Determinant**
 
-Condition: Square Matrix
+**Condition:** Square Matrix
 
 Used for: Inverse and Solving set of equation
 
@@ -28,7 +28,7 @@ Used: Machine Learning
 
 * Syntax: numpy.linalg.inv(matrix)
 
-BCD!! If determinant of matrix is 0 -> singular matrix -> Inverse does not exists
+If determinant of matrix is 0 -> singular matrix -> Inverse does not exists
 
 **4. Solving system of Equation**
 
