@@ -20,7 +20,9 @@ It is a package of pre-defined functions to perform numericals
 **2. Creating an Array**
 
 **Syntax:** numpy.array(Object)
+
 **Array:** Ordered and homogeneous
+
 **Type of array:** numpy.ndarray
 
 ```Python
@@ -33,64 +35,91 @@ print(array) # shows a list type array [] but elements are space separated rathe
 
 **3.1 Linspace**
 Creates an array of EQUALLY SPACED elements from start and end
+
 Default number of elements = 50
+
 * **Syntax:** numpy.linspace(start, stop, number of elements, data type, return step)
-Start and stop are both inclusive
-If we want to exclude the end value, use endpoint=False -> Remember if endpoint is not included, does not change the number of elements thus step value changes
-To include the increment value after the array output, use retstep=True
+
+* Start and stop are both inclusive
+* If we want to exclude the end value, use endpoint=False -> Remember if endpoint is not included, does not change the number of elements thus step value changes
+* To include the increment value after the array output, use retstep=True
 
 **3.2 arange**
+
 * **Syntax:** numpy.arange(start,stop,step) 
+
 Equally spaced elements decided by step value not the number of values
-Here, stop value is exclusive
+
+Here, stop value is exclusive.
 
 **3.3 ones**
+
 * **Syntax:** numpy.ones((Shape in tuple form), Data type)
--> Default Data type is float => 1. not 1
+
+* Default Data type is float => 1. not 1
 
 **3.4 zeros**
+
 * **Syntax:** numpy.zeros(shape, data type)
+
 Default data type is float => 0. not 0
 
 **3.5 Generate Random Values**
+
 * **Syntax:** numpy.random.rand(shape)
+
 If shape is a single integer, generated 1D array with values ranging in [0,1)
 
 **3.6 Logspace**
+
 Generates equally spaced values based on log value
+
 * **Syntax:** numpy.logspace(start, stop, num, endpoint, base, datatype)
+
 * Default number of elements is 50
+
 * Default base value is 10.0 not 10
+
 * Endpoint if true, include last value (Default value is True)
+
 Scientific Notation -> e+n => base^N
+
 For base 10, generates value from start to stop
 For any other base, generates value from base^start to base^stop
 
 **4. Advantages of Numpy**
+
 1. Supports vector operations
+
 2. Arrays are processed in C in backend thus they are faster than Python lists
 
 * Numpy arrays versus Lists in Python.
 
-1. Speed -> timeit module
+**1. Speed:** timeit module
 
+```Python
 x=range(1000) #list
 $ timeit sum(x)
 y=numpy.array(x)
 $ timeit numpy.sum(y)
+```
 
-2. Size/Memory
--> Memory of Lists (function)
+**2. Size/Memory**
+
+* Memory of Lists (function)
+
+```Python
 import sys
 sys.getsizeof(x[0])*len(x) //returns size of one element of the list in bytes
 -> Memory of Arrays (operator)
 y.itemsize * len(y) //itemsize returns size of each element of array in bytes (homogenous)
+```
 
+Size maybe less for lists when heterogenous elements:
 
-BCD!!! Size maybe less for lists when heterogenous elements:
+```Python
 import numpy as np
 import sys
-
 x = [1,2,3,'str',5]
 # print(sys.getsizeof(x[0])*len(x)) # Size is 140
 ''' But size found above is not correct because heterogenous elements'''
@@ -100,8 +129,9 @@ for el in x:
 print(sum) # Size is 172
 y = np.array(x)
 print(y.itemsize*len(y)) # Size is 220
+```
 
------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 Overview:
 1. Reshaping an array
