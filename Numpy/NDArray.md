@@ -1,70 +1,76 @@
-Overview
+# N-Dimensional Arrays
+
+## Table of Contents
+
 1. Numpy 
 2. Creating an Array
 3. Generate Arrays using built in functions
 4. Advantages of Numpy
 
-1. Numpy
-Numpy == Numerical Python
-Package
-Object: ndarray (N dimensional Arrays)
+**1. Numpy:** Numerical Python
+It is a package of pre-defined functions to perform numericals 
+**Object:** ndarray (N dimensional Arrays)
 
-Uses:
+**Uses:**
 * Mathematical and logical operations on Arrays
 * Fourier Transformations
 * Linear Algebra -> Rank, Determinants and Solving equations
 * Random Number Generation
 
-2. Creating an Array
-Syntax: numpy.array(Object)
-Array: Ordered and homogeneous
-Type of array: numpy.ndarray
-print(array) -> shows a list type array [] but elements are space separated rather than comma separated in arrays
+**2. Creating an Array**
 
-* All elements are coerced into same data type -> homogenous
+**Syntax:** numpy.array(Object)
+**Array:** Ordered and homogeneous
+**Type of array:** numpy.ndarray
 
-3. Generating Arrays using Built in Functions
+```Python
+print(array) # shows a list type array [] but elements are space separated rather than comma separated in arrays
+```
 
-3.1 Linspace
+* All elements are coerced into same data type (homogenous)
+
+**3. Generating Arrays using Built in Functions**
+
+**3.1 Linspace**
 Creates an array of EQUALLY SPACED elements from start and end
 Default number of elements = 50
-* Syntax: numpy.linspace(start, stop, number of elements, data type, return step)
+* **Syntax:** numpy.linspace(start, stop, number of elements, data type, return step)
 Start and stop are both inclusive
 If we want to exclude the end value, use endpoint=False -> Remember if endpoint is not included, does not change the number of elements thus step value changes
 To include the increment value after the array output, use retstep=True
 
-3.2 arange
-* Syntax: numpy.arange(start,stop,step) 
+**3.2 arange**
+* **Syntax:** numpy.arange(start,stop,step) 
 Equally spaced elements decided by step value not the number of values
 Here, stop value is exclusive
 
-3.3 ones
-* Syntax: numpy.ones((Shape in tuple form), Data type)
+**3.3 ones**
+* **Syntax:** numpy.ones((Shape in tuple form), Data type)
 -> Default Data type is float => 1. not 1
 
-3.4 zeros
-* Syntax: numpy.zeros(shape, data type)
+**3.4 zeros**
+* **Syntax:** numpy.zeros(shape, data type)
 Default data type is float => 0. not 0
 
-3.5 Generate Random Values
-Syntax: numpy.random.rand(shape)
+**3.5 Generate Random Values**
+* **Syntax:** numpy.random.rand(shape)
 If shape is a single integer, generated 1D array with values ranging in [0,1)
 
-3.6 Logspace
+**3.6 Logspace**
 Generates equally spaced values based on log value
-* Syntax: numpy.logspace(start, stop, num, endpoint, base, datatype)
--> Default number of elements is 50
--> Default base value is 10.0 not 10
--> Endpoint if true, include last value (Default value is True)
+* **Syntax:** numpy.logspace(start, stop, num, endpoint, base, datatype)
+* Default number of elements is 50
+* Default base value is 10.0 not 10
+* Endpoint if true, include last value (Default value is True)
 Scientific Notation -> e+n => base^N
 For base 10, generates value from start to stop
 For any other base, generates value from base^start to base^stop
 
-4. Advantages of Numpy
+**4. Advantages of Numpy**
 1. Supports vector operations
 2. Arrays are processed in C in backend thus they are faster than Python lists
 
--> Numpy arrays versus Lists in Python.
+* Numpy arrays versus Lists in Python.
 
 1. Speed -> timeit module
 
