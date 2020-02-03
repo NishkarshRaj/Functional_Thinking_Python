@@ -15,7 +15,9 @@
 
 **1. Creation of Dictionary**
 
+```Python
 dictionary_name = {keys:values , }
+```
 
 * keys: generally numbers or string
 * values: any python data type
