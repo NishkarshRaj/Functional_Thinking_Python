@@ -59,3 +59,9 @@ Elements are extracted from x to y-1
 **7. Update Tuples**
 
 We can modify tuples by converting them to lists, modifying the element and converting them back to tuples.
+
+```Python
+list_variable = list(tuple_variable)
+list_variable[index] = value # Update list
+tuple_variable = tuple(list_variable)
+```
