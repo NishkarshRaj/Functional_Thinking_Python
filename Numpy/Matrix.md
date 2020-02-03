@@ -56,7 +56,9 @@ print(np.matrix(np.arange(1,10).reshape((3,3))))
 > Remember the basic shape condition for matrix multiplication: n*p and p*m => n*m
 
 Way 1: np.dot(A,B)
+
 Way 2: np.matmul(A,B)
+
 Way 3: A@B
 
 5.5) np.divide(A,B)
