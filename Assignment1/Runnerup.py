@@ -7,5 +7,5 @@ list1 = list(map(int,input().split(' ')))
 # Remove will not work on list if max is duplicate
 # Convert to set
 set1 = set(list1)
-list1.remove(max(list1)) 
-print(max(list1))
+set1.remove(max(set1)) 
+print(max(set1))
