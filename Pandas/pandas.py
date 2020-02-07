@@ -50,6 +50,7 @@ fname = pd.read_excel("Hello.xlsx",na_values=["#","nish"])
 # print(fname.ndim) # number of variables or columns
 # print(fname.memory_usage()) # Tells memory used for all the columns including index in int64
 # print(pd.unique(fname['city'])) # Unique elements of the column
+'''Get number of columns handled by specific data type'''
 # print(fname.get_dtype_counts()) #deprecated
 # print(fname.dtypes.value_counts())
 
