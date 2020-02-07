@@ -109,4 +109,4 @@ fname = pd.read_excel("Hello.xlsx",na_values=["#","nish"])
 # Handling Null Values
 deep = fname.copy() # wont reflect changes in original
 deep = fname[fname.isnull().any(axis=1)] # Select rows with atleast 1 nan
-# deep = deep['World'].fillna(deep['World'].mean(),implace=True)
+# deep = deep['World'].fillna(deep['World'].mean(),inplace=True)
