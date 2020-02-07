@@ -86,7 +86,8 @@ Generates equally spaced values based on log value
 
 Scientific Notation -> e+n => base^N
 
-For base 10, generates value from start to stop
+For base 10, generates value from start to stop, i.e., Linspace and logspace work as same when base is 10 for logspace.
+
 For any other base, generates value from base^start to base^stop
 
 **4. Advantages of Numpy**
