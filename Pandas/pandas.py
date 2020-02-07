@@ -67,7 +67,7 @@ fname = pd.read_excel("Hello.xlsx",na_values=["#","nish"])
 # Row wise access
 # row = fname[start:end-1]
 # row = fname[4:11]   # (Way 1: Slicing) 
-# row = fname.loc[4:11] # (Way 2: loc with slicing -> end inclusive
+# row = fname.loc[4:11] # (Way 2: loc with slicing -> end inclusive)
 # row = fname.loc[4] # Fetch a single row                
 # row = fname.tail(1) # Access last row without iloc -> Output is DF -> Better
 # Way 3: iloc
