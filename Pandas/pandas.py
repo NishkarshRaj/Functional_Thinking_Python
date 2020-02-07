@@ -88,6 +88,7 @@ fname = pd.read_excel("Hello.xlsx",na_values=["#","nish"])
 
 # Grouping with column name -> categorical data
 # Group by multiple and take operation on all one at a time
+'''Syntax: logicalname.groupby([list of grouping columns])[list of operating columns].operation()'''
 # group = fname.groupby('city')['World','Zero'].mean()
 # group = fname.groupby('city')['World','Zero'].nunique()  
 # print(group) 
